@@ -1,2 +1,2 @@
-# ML_Andrewg
-Stanford-Machine-Learning-Course-master
+# Stanford-Machine-Learning-Course-master
+Stanford-Machine-Learning-Course-master文件夹中是大四时看吴恩达的机器学习课程所做的课后作业，用的是matlab语言。里面还包含着中国海洋大学黄海广博士根据吴恩达视频所做的笔记，这份笔记在学习过程中给我带来了很多的帮助。word文档是吴恩达视频中各次作业的要求。与君共勉~
