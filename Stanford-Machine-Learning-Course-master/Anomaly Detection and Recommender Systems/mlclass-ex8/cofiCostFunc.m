@@ -25,11 +25,11 @@ Theta_grad = zeros(size(Theta));
 %               gradient and use the checkCostFunction routine to check
 %               that the gradient is correct. Finally, you should implement
 %               regularization.
-%               ¼ÆËãĞ­Í¬¹ıÂËµÄ³É±¾º¯ÊıºÍÌİ¶È¡£ 
-%               ¾ßÌå¶øÑÔ£¬ÄúÓ¦¸ÃÊ×ÏÈ¼ÆËã´ú¼Ûº¯Êı£¨Ã»ÓĞÕıÔò»¯£©
-%               ²¢È·±£ËüÓëÎÒÃÇµÄ´ú¼Ûº¯ÊıÏàÆ¥Åä¡£ 
-%               Ö®ºó£¬ÄúÓ¦¸Ã¼ÆËãÌİ¶È²¢Ê¹ÓÃcheckCostFunctionÀı³ÌÀ´¼ì²éÌİ¶ÈÊÇ·ñÕıÈ·¡£ 
-%               ×îºó£¬ÄúÓ¦¸ÃÊµÏÖÕı¹æ»¯¡£
+%               è®¡ç®—ååŒè¿‡æ»¤çš„æˆæœ¬å‡½æ•°å’Œæ¢¯åº¦ã€‚ 
+%               å…·ä½“è€Œè¨€ï¼Œæ‚¨åº”è¯¥é¦–å…ˆè®¡ç®—ä»£ä»·å‡½æ•°ï¼ˆæ²¡æœ‰æ­£åˆ™åŒ–ï¼‰
+%               å¹¶ç¡®ä¿å®ƒä¸æˆ‘ä»¬çš„ä»£ä»·å‡½æ•°ç›¸åŒ¹é…ã€‚ 
+%               ä¹‹åï¼Œæ‚¨åº”è¯¥è®¡ç®—æ¢¯åº¦å¹¶ä½¿ç”¨checkCostFunctionä¾‹ç¨‹æ¥æ£€æŸ¥æ¢¯åº¦æ˜¯å¦æ­£ç¡®ã€‚ 
+%               æœ€åï¼Œæ‚¨åº”è¯¥å®ç°æ­£è§„åŒ–ã€‚
 % Notes: X - num_movies  x num_features matrix of movie features
 %        Theta - num_users  x num_features matrix of user features
 %        Y - num_movies x num_users matrix of user ratings of movies
@@ -53,7 +53,6 @@ X_grad = R.*(H - Y) * Theta + lambda * X;
 Theta_grad = (R.*(H - Y))' * X + lambda * Theta;
 
 % =============================================================
-
 grad = [X_grad(:); Theta_grad(:)];
 
 end
